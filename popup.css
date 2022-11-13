@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  height: 100vh;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 1;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+@media screen and (max-width: 700px) {
+  .box {
+    width: 70%;
+  }
+  .popup {
+    width: 70%;
+  }
+}
+.restart,
+.home_btn {
+  width: 150px;
+  height: 50px;
+  border: 2px solid #ed1b76;
+  color: white;
+  position: absolute;
+  right: 30%;
+  top: 50%;
+  font-size: 20px;
+  background-color: black;
+  cursor: pointer;
+  text-align: center;
+}
+.home_btn {
+  left: 30%;
+}
+.restart_text {
+  margin-top: 15px;
+  width: 100px;
+}
+.home_text {
+  margin-top: 15px;
+  width: 90px;
+  height: 25px;
+}
+.restart:hover,
+.home_btn:hover{
+  border: 2px solid black;
+}

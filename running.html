@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Running Game</title>
+    <link rel="stylesheet" href="./running.css" />
+    <link rel="stylesheet" href="./popup.css" />
+    <link rel="stylesheet" href="./glass_bridge_popup.css" />
+    <link rel="stylesheet" href="./howtoPlay.css" />
+    <script src="./running.js" defer></script>
+  </head>
+  <body>
+
+    <!-- Restart Button -->
+    <a id="restart_btn">
+      <img
+        src="running_images/restart.png"
+        alt=""
+        id="restart_btn"
+      />
+    </a>
+    <!-- Doll Girl -->
+    <img
+      src="running_images/black.png"
+      alt=""
+      class="doll_girl"
+      id="doll"
+    />
+    <!-- Green Light Display -->
+    <div class="display">
+      <img src="./running_images/cvfgsfge.png" alt="" id="green_light_img" />
+    </div>
+    <!-- Red Light Display -->
+    <div class="display">
+      <img src="./running_images/red_light.png" alt="" id="red_light_img" />
+    </div>
+    <!-- Players -->
+    <div id="player1">
+      <img
+        src="running_images/left_leg.png"
+        class="player"
+        id="player1_img"
+      />
+    </div>
+    <div id="player2">
+      <img
+        src="running_images/left_leg.png"
+        class="player"
+        id="player2_img"
+      />
+    </div>
+    <div id="player3">
+      <img
+        src="running_images/left_leg.png"
+        class="player"
+        id="player3_img"
+      />
+    </div>
+    <!-- Red Line -->
+    <div id="line"></div>
+    <!-- Green Line -->
+    <!-- <div id="line1"></div> -->
+    <!-- Audio -->
+    <audio id="red_light" src="./running_images/red-light.mp3"></audio>
+    <audio id="green_light" src="./running_images/green-light.mp3"></audio>
+    <!-- PopUp When GameWin Or Game Over -->
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <a href="" id="GameOver">
+          <img src="./image/Game Over.png" alt="" id="caption" />
+        </a>
+        <a class="restart" id="restart">
+          <img src="./image/restart.png" alt="" class="restart_text" />
+        </a>
+        <a class="home_btn" href="">
+          <img src="./image/sgg.png" alt="" class="home_text" />
+        </a>
+      </div>
+    </div>
+    <!-- How to Play Explain Popup -->
+    <div id="how_to_play_popup" class="overlay1">
+      <div class="popup_htp">
+        <a href="" id="how_to_play_card">
+          <img src="./image/Group 4.png" alt="" id="caption" />
+        </a>
+        <a class="start1" id="start1">
+          <img src="./image/start.png" alt="" class="start_text1" />
+        </a>
+      </div>
+    </div>
+    <audio id="winner" src="./image/winnersound.mp3"></audio>
+    <audio id="gameover" src="./image/gamesquidsound.mp3"></audio>
+  </body>
+</html>
